@@ -1,0 +1,6 @@
+.gitignore
+node_modules/**
+test_results/**
+src/registerServiceWorker.js
+build/**
+coverage/**

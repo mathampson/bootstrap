@@ -5,6 +5,9 @@
 
 # testing
 /coverage
+/cypress/videos
+/cypress/screenshots
+/test_results
 
 # production
 /build
@@ -15,10 +18,14 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.eslintcache
 
+# package management
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 # editors
 .idea/*
+.vscode/*
+.vs/*

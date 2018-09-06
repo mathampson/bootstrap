@@ -1,0 +1,59 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "react-app",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "cypress",
+    "react",
+    "jsx-a11y"
+  ],
+  "rules": {
+    "no-invalid-this": 0,
+    "semi": ["error", "always"],
+    "react/jsx-max-props-per-line": [1, { "maximum": 3, "when": "multiline" }],
+    "react/jsx-indent": [2, 2],
+    "jsx-quotes": ["error", "prefer-double"],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "indent": [2, 2, {"SwitchCase": 1}],
+    // This rule was removed in V6 of the plugin, but is still present in the 'recommended' set used above
+    "jsx-a11y/href-no-hash": "off",
+    "max-len": [2,
+      {
+        "code": 120,
+        "ignoreUrls": true,
+        "ignoreComments": true,
+        "ignorePattern": "\\s*<",
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "require-jsdoc": [1,
+      {
+        "require": {
+          "FunctionDeclaration": false,
+          "MethodDefinition": false,
+          "ClassDeclaration": false,
+          "ArrowFunctionExpression": false
+        }
+      }
+    ],
+    "no-unused-expressions": [0, {"allowShortCircuit": true}]
+  },
+  "env": {
+    "cypress/globals": true
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}
