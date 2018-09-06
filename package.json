@@ -14,8 +14,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint ./ --cache",
     "lint:fix": "npm run lint -- --fix",
-    "e2e-test:headless": "cypress run --config testFiles=main.test.js",
-    "e2e-test:browser": "cypress open",
+    "cypress:headless": "cypress run --config testFiles=main.test.js",
+    "cypress:browser": "cypress open",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "scss": "node-sass --output-style compressed --source-map true -o src/_assets/css src/_assets/scss/main.scss",
     "scss:watch": "npm run scss && node-sass --watch src/_assets/scss/ --output-style compressed --source-map true --output src/_assets/css"
